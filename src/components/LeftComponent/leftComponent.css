@@ -1,6 +1,8 @@
 .left {
   display: flex;
   flex-direction: column;
+  width: 25%;
+  min-width: 315px;
 }
 
 .left-top {
@@ -15,10 +17,4 @@
   min-height: 390px;
   background-color: rgba(0, 0, 0, 0.15);
   border: solid 2px black;
-}
-
-@media screen and (max-width: 900px) {
-  .left {
-    display: none;
-  }
 }
