@@ -1,14 +1,17 @@
-import React from 'react';
-import './NavComponent.css';
+import React from 'react'
+import './NavComponent.css'
+import Links from './Links'
+import Logo from './Logo'
+import Search from './Search'
 
 const NavComponent = () => {
   return (
     <div className="nav-container">
-      <div className="nav-section nav-links">LINKS</div>
-      <div className="nav-section nav-logo">LOGO</div>
-      <div className="nav-section nav-input">INPUT</div>
+      <Links />
+      <Logo />
+      <Search />
     </div>
-  );
-};
+  )
+}
 
-export default NavComponent;
+export default NavComponent
