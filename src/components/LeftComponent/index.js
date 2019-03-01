@@ -1,13 +1,20 @@
-import React from 'react';
-import './leftComponent.css';
+import React from 'react'
+import './leftComponent.css'
 
 const LeftComponent = () => {
   return (
-    <div className="left">
-      <div className="left-top" />
-      <div className="left-bottom" />
+    <div className="card grey lighten-3">
+      <div className="card-content">
+        <span className="card-title">Left Component</span>
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laboriosam,
+          expedita debitis! Incidunt velit, explicabo ad deserunt dolorem vel
+          illum eveniet voluptate quis animi dicta expedita repudiandae ut
+          exercitationem, maxime minus!
+        </p>
+      </div>
     </div>
-  );
-};
+  )
+}
 
-export default LeftComponent;
+export default LeftComponent

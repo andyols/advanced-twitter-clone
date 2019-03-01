@@ -1,8 +1,6 @@
-.right {
+/* .right {
   display: flex;
   flex-direction: column;
-  width: 25%;
-  min-width: 315px;
 }
 
 .right-top {
@@ -17,4 +15,4 @@
   min-height: 240px;
   background-color: rgba(0, 0, 0, 0.15);
   border: solid 2px black;
-}
+} */

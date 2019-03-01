@@ -1,20 +1,26 @@
-import React from 'react';
-import './App.css';
-import NavComponent from './components/NavComponent/index';
-import LeftComponent from './components/LeftComponent/index';
-import MiddletComponent from './components/MiddleComponent/index';
-import RightComponent from './components/RightComponent/index';
+import React from 'react'
+import NavComponent from './components/NavComponent/index'
+import LeftComponent from './components/LeftComponent/index'
+import MiddletComponent from './components/MiddleComponent/index'
+import RightComponent from './components/RightComponent/index'
 
 function App() {
   return (
-    <div className="App">
+    <div>
       <NavComponent />
-      <div className="container-main">
-        <LeftComponent />
-        <MiddletComponent />
-        <RightComponent />
+
+      <div className="row">
+        <div className="col s3">
+          <LeftComponent />
+        </div>
+        <div className="col s6">
+          <MiddletComponent />
+        </div>
+        <div className="col s3">
+          <RightComponent />
+        </div>
       </div>
     </div>
-  );
+  )
 }
-export default App;
+export default App
