@@ -1,0 +1,16 @@
+.middle {
+  display: flex;
+  flex-direction: column;
+}
+
+.middle-top {
+  height: 10vh;
+  width: 33.33vw;
+  border: 2px purple solid;
+}
+
+.middle-bottom {
+  height: 90vh;
+  width: 33.33vw;
+  border: 2px blue solid;
+}

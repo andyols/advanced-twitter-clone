@@ -1,0 +1,16 @@
+.left {
+  display: flex;
+  flex-direction: column;
+}
+
+.left-top {
+  height: 50vh;
+  width: 33.33vw;
+  border: 2px orange solid;
+}
+
+.left-bottom {
+  height: 50vh;
+  width: 33.33vw;
+  border: 2px red solid;
+}

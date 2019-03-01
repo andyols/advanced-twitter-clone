@@ -1,0 +1,16 @@
+.right {
+  display: flex;
+  flex-direction: column;
+}
+
+.right-top {
+  height: 70vh;
+  width: 33.33vw;
+  border: 2px red solid;
+}
+
+.right-bottom {
+  height: 30vh;
+  width: 33.33vw;
+  border: 2px orange solid;
+}
