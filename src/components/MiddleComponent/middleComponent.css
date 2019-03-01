@@ -1,16 +1,18 @@
 .middle {
   display: flex;
   flex-direction: column;
+  height: 100%;
+  width: 33%;
 }
 
 .middle-top {
-  height: 10vh;
-  width: 33.33vw;
-  border: 2px purple solid;
+  height: 10%;
+  background-color: rgba(0, 0, 0, 0.15);
+  border: solid 2px black;
 }
 
 .middle-bottom {
-  height: 90vh;
-  width: 33.33vw;
-  border: 2px blue solid;
+  height: 90%;
+  background-color: rgba(18, 151, 224, 0.2);
+  border: solid 2px black;
 }

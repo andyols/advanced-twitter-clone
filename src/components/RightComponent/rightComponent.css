@@ -1,16 +1,18 @@
 .right {
   display: flex;
   flex-direction: column;
+  height: 100%;
+  width: 33%;
 }
 
 .right-top {
-  height: 70vh;
-  width: 33.33vw;
-  border: 2px red solid;
+  height: 70%;
+  background-color: rgba(18, 151, 224, 0.2);
+  border: solid 2px black;
 }
 
 .right-bottom {
-  height: 30vh;
-  width: 33.33vw;
-  border: 2px orange solid;
+  height: 30%;
+  background-color: rgba(0, 0, 0, 0.15);
+  border: solid 2px black;
 }

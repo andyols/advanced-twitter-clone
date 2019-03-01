@@ -7,9 +7,9 @@ import RightComponent from './components/RightComponent/index';
 
 function App() {
   return (
-    <div>
+    <div className="App">
       <NavComponent />
-      <div className="App">
+      <div className="container-main">
         <LeftComponent />
         <MiddletComponent />
         <RightComponent />
