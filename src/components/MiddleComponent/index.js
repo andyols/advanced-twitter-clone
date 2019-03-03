@@ -3,7 +3,7 @@ import './middleComponent.css'
 
 const MiddleComponent = () => {
   return (
-    <div className="card grey lighten-3">
+    <div className="card-panel grey lighten-3">
       <div className="card-content">
         <span className="card-title">Middle Component</span>
         <p>

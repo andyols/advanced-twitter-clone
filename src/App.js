@@ -10,10 +10,10 @@ function App() {
       <NavComponent />
 
       <div className="row">
-        <div className="col s3">
+        <div className="col s3 offset-s1">
           <LeftComponent />
         </div>
-        <div className="col s6">
+        <div className="col s4">
           <MiddletComponent />
         </div>
         <div className="col s3">
