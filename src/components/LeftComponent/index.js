@@ -1,29 +1,19 @@
 import React from 'react'
 import './leftComponent.css'
+import Trends from './Trends'
+import UserCard from './UserCard'
 
 const LeftComponent = () => {
   return (
     <div>
-      <div className="card-panel grey lighten-3">
-        <div className="card-content">
-          <span className="card-title">Left Component</span>
-          <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-            Laboriosam, expedita debitis! Incidunt velit, explicabo ad deserunt
-            dolorem vel illum eveniet voluptate quis animi dicta expedita
-            repudiandae ut exercitationem, maxime minus!
-          </p>
+      <div className="row">
+        <div className="col s12">
+          <UserCard />
         </div>
       </div>
-      <div className="card-panel grey lighten-3">
-        <div className="card-content">
-          <span className="card-title">Left Component</span>
-          <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-            Laboriosam, expedita debitis! Incidunt velit, explicabo ad deserunt
-            dolorem vel illum eveniet voluptate quis animi dicta expedita
-            repudiandae ut exercitationem, maxime minus!
-          </p>
+      <div className="row">
+        <div className="col s12">
+          <Trends />
         </div>
       </div>
     </div>
