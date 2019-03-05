@@ -1,17 +1,18 @@
 import React from 'react'
 import './middleComponent.css'
+import Tweet from './Tweet'
 
 const MiddleComponent = () => {
   return (
     <div className="card-panel grey lighten-3">
-      <div className="card-content">
-        <span className="card-title">Middle Component</span>
-        <p>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laboriosam,
-          expedita debitis! Incidunt velit, explicabo ad deserunt dolorem vel
-          illum eveniet voluptate quis animi dicta expedita repudiandae ut
-          exercitationem, maxime minus!
-        </p>
+      <div className="row">
+        <div className="col s12">
+          <Tweet />
+          <Tweet />
+          <Tweet />
+          <Tweet />
+          <Tweet />
+        </div>
       </div>
     </div>
   )
