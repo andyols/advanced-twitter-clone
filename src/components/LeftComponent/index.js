@@ -36,6 +36,10 @@ class LeftComponent extends Component {
       {
         title: '#Trend6',
         tweetCount: Math.floor(Math.random() * (10000 - 5000)) + 5000
+      },
+      {
+        title: '#Trend7',
+        tweetCount: Math.floor(Math.random() * (MAX - MIN)) + MIN
       }
     ]
   }

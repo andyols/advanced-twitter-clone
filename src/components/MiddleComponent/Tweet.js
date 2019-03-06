@@ -17,8 +17,9 @@ const Tweet = ({
         {author} {authorHandle}
       </span>
       <p>
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Pariatur, vero
-        ducimus!
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo earum,
+        perspiciatis blanditiis ipsa temporibus, eius exercitationem suscipit
+        quis doloremque.
       </p>
       <br />
 
