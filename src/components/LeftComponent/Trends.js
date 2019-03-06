@@ -1,14 +1,19 @@
 import React from 'react'
 import Trend from './Trend'
 
-const Trends = () => {
+const Trends = ({ trends }) => {
   return (
     <ul className="collection">
-      <Trend />
-      <Trend />
-      <Trend />
-      <Trend />
-      <Trend />
+      <li className="collection-header collection-item">
+        <h5>Trends</h5>
+      </li>
+      {trends.map(trend => (
+        <Trend
+          title={trend.title}
+          tweetCount={trend.tweetCount}
+          key={trend.tweetCount}
+        />
+      ))}
     </ul>
   )
 }

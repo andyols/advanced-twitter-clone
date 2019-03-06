@@ -1,13 +1,19 @@
 import React from 'react'
 import RelatedUser from './RelatedUser'
 
-const WhoToFollow = () => {
+const WhoToFollow = ({ relatedUsers }) => {
   return (
     <ul className="collection">
-      <li className="collection-header">
-        <h4>Who To Follow</h4>
+      <li className="collection-header collection-item">
+        <h5>Who To Follow</h5>
       </li>
-      <RelatedUser />
+      {relatedUsers.map(user => (
+        <RelatedUser
+          username={user.username}
+          handle={user.handle}
+          key={user.username}
+        />
+      ))}
     </ul>
   )
 }

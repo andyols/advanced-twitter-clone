@@ -1,13 +1,13 @@
 import React from 'react'
 
-const Trend = () => {
+const Trend = ({ title, tweetCount }) => {
   return (
     <li className="collection-item">
       <a href="#">
-        <span className="blue-text">#Trend</span>
+        <span className="blue-text">{title}</span>
       </a>
       <br />
-      <span className="grey-text">9000+ Tweets</span>
+      <span className="grey-text">{tweetCount + ' Tweets'}</span>
     </li>
   )
 }
