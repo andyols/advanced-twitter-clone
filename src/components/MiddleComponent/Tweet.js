@@ -1,6 +1,13 @@
 import React from 'react'
 
-const Tweet = ({ author, authorHandle, heartCount }) => {
+const Tweet = ({
+  author,
+  authorHandle,
+  heartCount,
+  id,
+  handleHeartClick,
+  userHearted
+}) => {
   return (
     <li className="collection-item avatar">
       <i className="circle">
@@ -21,7 +28,11 @@ const Tweet = ({ author, authorHandle, heartCount }) => {
       <a href="!#" className="grey-text tweet-btn">
         <i className="fas fa-retweet" />
       </a>
-      <a href="!#" className="grey-text tweet-btn">
+      <a
+        href="!#"
+        className={userHearted ? 'pink-text tweet-btn' : 'grey-text tweet-btn'}
+        onClick={() => handleHeartClick(id)}
+      >
         <i className="fas fa-heart" /> {heartCount}
       </a>
     </li>
