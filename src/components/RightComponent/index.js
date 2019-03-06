@@ -58,9 +58,21 @@ class RightComponent extends Component {
             />
           </div>
         </div>
-        <div className="row">
+        <div className="row no-margin">
           <div className="col s12">
             <LiveVideo />
+          </div>
+        </div>
+        <div className="row">
+          <div className="col s12">
+            <ul className="collection">
+              <li className="collection-item">
+                <p className="grey-text">
+                  &copy; 2019 TwitterClone About Help Center Terms Privacy
+                  Policy Cookies Ad Info
+                </p>
+              </li>
+            </ul>
           </div>
         </div>
       </div>
