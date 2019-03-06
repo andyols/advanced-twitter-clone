@@ -1,6 +1,12 @@
 import React from 'react'
 
-const RelatedUser = ({ username, handle }) => {
+const RelatedUser = ({
+  username,
+  handle,
+  handleFollowClick,
+  id,
+  userIsFollowing
+}) => {
   return (
     <li className="collection-item avatar">
       <i className="circle">
@@ -8,12 +14,23 @@ const RelatedUser = ({ username, handle }) => {
       </i>
       <span className="title">{username}</span>
       <p>{handle}</p>
-      <a
-        href="#!"
-        className="secondary-content waves-effect waves-light btn-small blue"
-      >
-        Follow
-      </a>
+      {(!userIsFollowing && (
+        <a
+          href="#!"
+          className="secondary-content waves-effect waves-light btn-small blue"
+          onClick={() => handleFollowClick(id)}
+        >
+          Follow
+        </a>
+      )) || (
+        <a
+          href="#!"
+          className="secondary-content waves-effect waves-light btn-small green"
+          onClick={() => handleFollowClick(id)}
+        >
+          Following
+        </a>
+      )}
     </li>
   )
 }

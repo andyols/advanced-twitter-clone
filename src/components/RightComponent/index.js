@@ -6,11 +6,45 @@ import LiveVideo from './LiveVideo'
 class RightComponent extends Component {
   state = {
     relatedUsers: [
-      { username: 'Barack Obama', handle: '@BarackObama' },
-      { username: 'YouTube', handle: '@YouTube' },
-      { username: 'Bill Gates', handle: '@BillGates' },
-      { username: 'Donald J. Trump', handle: '@realDonaldTrump' }
+      {
+        id: 0,
+        username: 'Barack Obama',
+        handle: '@BarackObama',
+        userIsFollowing: false
+      },
+      {
+        id: 1,
+        username: 'YouTube',
+        handle: '@YouTube',
+        userIsFollowing: false
+      },
+      {
+        id: 2,
+        username: 'Bill Gates',
+        handle: '@BillGates',
+        userIsFollowing: false
+      },
+      {
+        id: 3,
+        username: 'Donald J. Trump',
+        handle: '@realDonaldTrump',
+        userIsFollowing: false
+      }
     ]
+  }
+
+  handleFollowClick = id => {
+    this.setState(prevState => ({
+      relatedUsers: prevState.relatedUsers.map(user => {
+        return user.id === id && !user.userIsFollowing
+          ? Object.assign(user, {
+              userIsFollowing: true
+            })
+          : Object.assign(user, {
+              userIsFollowing: false
+            })
+      })
+    }))
   }
 
   render() {
@@ -18,7 +52,10 @@ class RightComponent extends Component {
       <div>
         <div className="row no-margin">
           <div className="col s12">
-            <WhoToFollow relatedUsers={this.state.relatedUsers} />
+            <WhoToFollow
+              relatedUsers={this.state.relatedUsers}
+              handleFollowClick={this.handleFollowClick}
+            />
           </div>
         </div>
         <div className="row">

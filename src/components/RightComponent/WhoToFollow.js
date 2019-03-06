@@ -1,7 +1,7 @@
 import React from 'react'
 import RelatedUser from './RelatedUser'
 
-const WhoToFollow = ({ relatedUsers }) => {
+const WhoToFollow = ({ relatedUsers, handleFollowClick }) => {
   return (
     <ul className="collection">
       <li className="collection-header collection-item">
@@ -11,7 +11,10 @@ const WhoToFollow = ({ relatedUsers }) => {
         <RelatedUser
           username={user.username}
           handle={user.handle}
-          key={user.username}
+          handleFollowClick={handleFollowClick}
+          userIsFollowing={user.userIsFollowing}
+          id={user.id}
+          key={user.id}
         />
       ))}
     </ul>
